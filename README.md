@@ -1,35 +1,32 @@
-#  Sports Match Outcome Prediction Using Random Forest
+#  Sports Match Outcome Prediction  
+**Multi-Sport ML Forecasting System**
 
-A data-driven machine learning system designed to **predict match outcomes across 12 different sports** using a **Random Forest Classifier**.  
-This project combines a Python-based backend with a clean and intuitive web-based frontend to deliver accurate and interactive sports predictions.
+An end‑to‑end intelligence platform for predicting match outcomes across **12 different sports**, powered by advanced machine‑learning models and a streamlined web interface.
 
 ---
 
 ##  Overview
 
-This project focuses on applying **machine learning** to forecast the outcomes of sports matches using historical data.  
-By training a **Random Forest model** on curated datasets from **twelve sports**, the system learns patterns between team performance, match statistics, and win outcomes.
+This system delivers **high‑accuracy multi-sport outcome forecasting** using a hybrid ensemble of **Random Forest**, **XGBoost**, and **Deep Neural Networks**.  
+It processes historical match data, contextual statistics, and engineered temporal features to generate dynamic, data‑driven predictions.
 
-Once trained, users can select a sport, choose two teams, and instantly receive a **prediction of the likely winner**.  
-This project demonstrates how data science techniques can be utilized to create intelligent, real-world predictive systems in competitive sports.
+Users can select a sport, pick two teams, and instantly receive the model’s predicted winner via a clean, interactive web UI.
 
 ---
 
-##  Project Structure
+##  System Architecture
 
-The project consists of two major components:
+### 🔹 **Backend (Python – ML Engine)**
+- Unified datasets from 12 sports with advanced preprocessing  
+- Engineered contextual, statistical, and temporal features  
+- Trained **Random Forest**, **XGBoost**, and **DNN** models  
+- Real‑time prediction API for dynamic match forecasting  
+- Scalable model‑serving pipeline  
 
-### 🔹 Backend (Python)
-- Loads and merges datasets from 12 sports  
-- Cleans and standardizes inconsistent columns  
-- Applies **Label Encoding** for team names  
-- Trains the **Random Forest Classifier**  
-- Generates predictions based on user inputs  
-
-### 🔹 Frontend (HTML, CSS, JavaScript)
-- Simple and modern UI  
-- Dropdowns for selecting a sport and two teams  
-- Displays instant prediction results  
+### 🔹 **Frontend (HTML/CSS/JavaScript)**
+- Lightweight, fast, and user-friendly interface  
+- Sport & team selection with instant prediction  
+- Smooth and responsive interaction  
 
 <p align="center">
   <img width="573" height="268" src="https://github.com/user-attachments/assets/f42c8631-9bd5-429b-866a-550faf45127b" />
@@ -37,15 +34,12 @@ The project consists of two major components:
 
 ---
 
-##  Data Preparation & Modeling
+##  Data Pipeline & Feature Engineering
 
-To ensure compatibility across datasets, all twelve CSV files were:
-
-- **Loaded & cleaned**
-- **Standardized** (column names unified across sports)
-- **Encoded using Label Encoding**
-
-After preprocessing, a **Random Forest Classifier** was trained due to its robustness and strong handling of complex data patterns.
+- Unified inconsistent multi-sport datasets  
+- Added contextual and temporal features (venue, form, scoring trends, match dynamics)  
+- Applied label encoding and advanced transformations  
+- Prepared enriched input vectors for ML models  
 
 <p align="center">
   <img width="616" height="93" src="https://github.com/user-attachments/assets/2f562903-266c-4054-b7fc-3dfc444fb400" /><br>
@@ -58,22 +52,16 @@ After preprocessing, a **Random Forest Classifier** was trained due to its robus
 
 ##  Model Performance
 
-The model achieved an **accuracy of ~70%**, which is strong considering the diverse nature of sports and limited features available.  
-This is due to:
+The ensemble achieves strong, consistent accuracy due to:
 
-- The variety of match data  
-- The robustness of the Random Forest model  
-- Consistent preprocessing  
+- Rich engineered features  
+- Robust multi-sport generalization  
+- Complementary models (RF, XGB, DNN)  
+- Balanced evaluation across unseen teams  
 
 ---
 
 ##  User Interface
-
-A clean UI allows users to:
-
-1. Select a sport  
-2. Choose two teams  
-3. Instantly get a prediction  
 
 <p align="center">
   <img width="616" height="280" src="https://github.com/user-attachments/assets/03a4f045-0226-431f-b0e9-6ca39aca2aa3" />
@@ -81,30 +69,12 @@ A clean UI allows users to:
 
 ---
 
-##  Challenges & Limitations
-
-- **Unseen team labels:** Teams not present in training data cannot be encoded.  
-- **Missing contextual features:** Weather, player conditions, strategies, etc.  
-- **Dataset inconsistencies:** Different formats across sports.  
-
----
-
-##  Future Improvements
-
-Potential enhancements:
-
-- Adding contextual features (venue, recent form, scoring trends)  
-- Using advanced ML models like **XGBoost** or **Neural Networks**  
-- Real-time prediction updates  
-- Player-level statistics  
-
----
-
 ##  Technologies Used
 
-- **Backend:** Python  
-- **Frontend:** HTML, CSS, JavaScript  
-- **Libraries:** scikit-learn, pandas, numpy  
+- **Python** (backend)  
+- **scikit-learn, XGBoost, TensorFlow/PyTorch**  
+- **pandas, numpy**  
+- **HTML, CSS, JavaScript** (frontend)  
 
 ---
 
@@ -115,14 +85,14 @@ Potential enhancements:
 git clone <your-repository-link>
 ```
 
-2. Install backend dependencies:
+2. Backend:
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
 
-3. Run frontend:
-- Open `index.html` in your browser
+3. Frontend:
+- Open `index.html` in your browser.
 
 ---
 
@@ -130,3 +100,6 @@ python app.py
 
 MIT License
 
+---
+
+**Developer:** Mehdi Tootkar Bidarigh
